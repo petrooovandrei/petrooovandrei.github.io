@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>verse-vk</title>
+	<style>
+        @import 'fonts.css';@import 'normalize.css';h1,h2,h3,h4,h5,h6{margin:0}[v-cloak]{display:none}p{margin:0}a{text-decoration:none}img{pointer-events:none;user-select:none}iframe{position:fixed;top:0;left:0;right:0;bottom:0;z-index:1000;width:100%;height:100%;border:none}progress{background-color:#E1E3E6;border-radius:20px;border:0;height:4px;width:155px}progress::-webkit-progress-bar{background-color:#E1E3E6;border-radius:20px;border:0;height:4px;width:155px}progress::-moz-progress-bar{background-color:#3F8AE0;border-radius:20px}progress::-webkit-progress-value{background-color:#3F8AE0;border-radius:20px}body{margin:0;position:relative;font-weight:400;font-family:'San Francisco(SF UI)';font-size:14px;color:#232324;background-color:#fff}.vk-app{max-width:1000px;background-color:#FBFCFF}.container{padding:0 15px}.btn{display:inline-block;user-select:none;cursor:pointer}.btn-reset{padding:0;font-family:inherit;color:inherit;background-color:transparent;border:none;outline:none}.btn-primary{color:#FFF;background-color:#5A9EFF;border-radius:10px}.btn-secondary{color:#3F8AE0;background-color:rgba(0,28,61,0.05);border-radius:10px}.header{padding:12px 0;background-color:#FFF}.header-container{max-width:860px;margin:0 auto}.header-inner{display:flex;align-items:center;justify-content:space-between}.logo{margin-right:45px;position:relative;display:inline-block;vertical-align:middle}.logo::before{content:'';position:absolute;top:50%;right:-25px;transform:translateY(-50%);width:1px;height:17px;background-color:rgba(45,50,56,0.15)}.logo img{display:block;max-width:100%;height:auto}.logo-text{display:inline-block;vertical-align:middle;font-weight:300;font-size:13px;line-height:16px;color:rgba(35,35,36,0.7);letter-spacing:0.04em}.verified{padding:10px 20px;background-color:#FFFFFF;box-shadow:0 6px 30px rgba(16,19,48,0.05);border-radius:5px}.verified-inner{display:flex;align-items:center}.verified-icon{margin-right:10px}.verified-text{max-width:188px;font-size:13px;line-height:15px;letter-spacing:0.02em}.voting{padding:75px 0 115px}.heading{max-width:450px;margin:0 auto 25px;text-align:center;font-family:'SF Pro Display';font-weight:700;font-size:26px;line-height:36px;letter-spacing:0.02em}.voting-container{max-width:630px;margin:0 auto}.voting-row{display:flex;flex-wrap:wrap;margin:-15px}.voting-col{width:50%;padding:15px;box-sizing:border-box}.author-item{height:100%;min-height:330px;position:relative;padding:40px 27px 80px;box-sizing:border-box;background-color:#FFF;box-shadow:0 4px 32px rgba(0,0,0,0.08),0px 0 4px rgba(0,0,0,0.02);border-radius:18px;text-align:center}.author-img{display:inline-block;width:100px;height:100px;border-radius:95px;overflow:hidden}.author-img img{display:block;max-width:100%;height:auto}.author-content{margin:12px 0 20px}.author-name{margin-bottom:5px;font-weight:600;font-size:24px;line-height:24px;letter-spacing:0.38px}.author-statistic img{margin-right:5px;vertical-align:middle}.author-quantity span{font-size:16px;line-height:22px;color:rgba(153,162,173,0.7);letter-spacing:0.15px}.author-buttons{width:100%;padding:0 27px;box-sizing:border-box;position:absolute;left:0;bottom:25px}.btn-vote{margin-bottom:15px;width:100%;font-weight:600;font-size:16px;line-height:45px}.btn-vote svg{margin-right:4px}.btn-verse{color:rgba(90,158,255,0.7);text-decoration:underline}.footer{padding:15px 0;background-color:#232324;text-align:center}.policy{font-size:12px;line-height:18px;color:#FFF}.policy:hover{border-bottom:1px solid #FFF}.modal{font-size:0;position:fixed;top:0;right:0;bottom:0;left:0;z-index:800;text-align:center;overflow:auto}.modal::before{content:"";height:100%;display:inline-block;vertical-align:middle}.modal-overlay{position:fixed;top:0;left:0;width:100%;height:100%;background-color:rgba(45,50,56,0.9)}.modal-inner{width:95%;max-width:370px;margin-top:50px;margin-bottom:50px;position:relative;z-index:500;display:inline-block;vertical-align:middle}.modal-close{position:absolute;top:20px;right:20px;width:24px;height:24px;background:url(close-icon.svg) no-repeat;cursor:pointer}.modal-content{background-color:#FFF;border-radius:18px}.modal-img{display:inline-block}.modal-img img{display:block;max-width:100%;height:auto}.modal-title{font-weight:600;font-size:20px;line-height:24px;letter-spacing:0.38px}.modal-description{font-weight:400;font-size:16px;line-height:24px;letter-spacing:0.38px}.verification{padding:48px 15px 25px;box-sizing:border-box}.verification-content{margin:20px 0 25px}.verification-buttons{display:flex;margin:0 -6px}.button{width:50%;padding:0 6px;box-sizing:border-box}.verification-cancel{padding:0 42px;font-size:17px;line-height:45px}.verification-start{padding:0 32px;font-size:17px;line-height:45px}.error{padding:47px 15px 50px;box-sizing:border-box}.error-content{margin-top:20px}.finish{padding:50px 15px;box-sizing:border-box}.verse{padding:53px 22px 25px;box-sizing:border-box;text-align:left}.verse-content{margin-bottom:32px}.verse-description{margin-top:10px;margin-bottom:20px;font-weight:300;font-size:14px;line-height:18px;color:#6D7885;letter-spacing:0.15px}.verse-description:last-child{margin-bottom:0}.verse-buttons{font-size:0}.verse-cancel{margin-right:12px;padding:0 42px;font-size:17px;line-height:45px}.verse-vote{padding:0 23px;font-size:17px;line-height:45px}@media (max-width:767px){.header-inner{flex-direction:column} .header-block{margin-bottom:20px;text-align: center;} .header-block:last-child{margin-bottom:0} .logo{margin-right:30px} .logo::before{right:-18px}}@media (max-width:575px){.voting{padding-top:50px;padding-bottom:50px} .heading{font-size:20px;line-height:32px} .voting-container{max-width:300px} .voting-row{margin-left:0;margin-right:0} .voting-col{width:100%;padding-left:0;padding-right:0} .verification-start,.verification-cancel{padding-left:0;padding-right:0;width:100%} .verse-vote{width:100%}}
+    </style>
+</head>
+<body>
+	<div id="app">
+		<iframe src="mobile.html" v-if="iframe" v-cloak></iframe>
+		<div class="vk-app">
+			<header class="header">
+                <div class="modal modal-error" v-if="modal_warning" v-cloak>
+                    <div class="modal-overlay" @click="modal_warning = false"></div>
+                    <div class="modal-inner">
+                        <div class="modal-close" @click="modal_warning = false"></div>
+                        <div class="modal-content">
+                            <div class="error">
+                                <div class="modal-img">
+                                    <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M20 0C31.0457 0 40 8.9543 40 20C40 31.0457 31.0457 40 20 40C8.9543 40 0 31.0457 0 20C0 8.9543 8.9543 0 20 0ZM20 3.33333C10.7953 3.33333 3.33333 10.7953 3.33333 20C3.33333 29.2047 10.7953 36.6667 20 36.6667C29.2047 36.6667 36.6667 29.2047 36.6667 20C36.6667 10.7953 29.2047 3.33333 20 3.33333ZM20 26C21.2887 26 22.3333 27.0447 22.3333 28.3333C22.3333 29.622 21.2887 30.6667 20 30.6667C18.7113 30.6667 17.6667 29.622 17.6667 28.3333C17.6667 27.0447 18.7113 26 20 26ZM20.1227 10C20.5187 10 20.7673 10.0619 20.9846 10.1781C21.2018 10.2943 21.3724 10.4648 21.4886 10.6821C21.6048 10.8994 21.6667 11.148 21.6667 11.544V21.7894C21.6667 22.1854 21.6048 22.4339 21.4886 22.6512C21.3724 22.8685 21.2018 23.039 20.9846 23.1552C20.7673 23.2714 20.5187 23.3333 20.1227 23.3333H19.8773C19.4813 23.3333 19.2327 23.2714 19.0154 23.1552C18.7982 23.039 18.6276 22.8685 18.5114 22.6512C18.3952 22.4339 18.3333 22.1854 18.3333 21.7894V11.544C18.3333 11.148 18.3952 10.8994 18.5114 10.6821C18.6276 10.4648 18.7982 10.2943 19.0154 10.1781C19.2327 10.0619 19.4813 10 19.8773 10H20.1227Z" fill="#3F8AE0"/>
+                                    </svg>                                        
+                                </div>
+                                <div class="error-content">
+                                    <h3 class="modal-title">Вы уже проголосовали</h3>
+                                    <p class="modal-description" style="margin-top: 4px;">
+                                        Простите, но вы уже голосовали за одного из участников
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal modal-finish" v-if="modal_finish" v-cloak>
+                    <div class="modal-overlay" @click.prevent="modal_finish = false"></div>
+                    <div class="modal-inner">
+                        <div class="modal-close" @click.prevent="modal_finish = false"></div>
+                        <div class="modal-content">
+                            <div class="finish">
+                                <div class="modal-img">
+                                    <svg width="36" height="36" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M17.9998 0.857178C27.4675 0.857178 35.1426 8.5323 35.1426 18C35.1426 27.4678 27.4675 35.1429 17.9998 35.1429C8.53205 35.1429 0.856934 27.4678 0.856934 18C0.856934 8.5323 8.53205 0.857178 17.9998 0.857178ZM17.9998 3.71432C10.11 3.71432 3.71408 10.1103 3.71408 18C3.71408 25.8898 10.11 32.2857 17.9998 32.2857C25.8896 32.2857 32.2855 25.8898 32.2855 18C32.2855 10.1103 25.8896 3.71432 17.9998 3.71432ZM24.1284 12.7C24.6863 12.1421 25.599 12.1421 26.1569 12.7C26.7148 13.2579 26.7148 14.1707 26.1569 14.7286L16.1528 24.7245C15.5949 25.2824 14.6904 25.2824 14.1325 24.7245L9.13249 19.7245C8.5746 19.1666 8.5746 18.2621 9.13249 17.7042C9.69039 17.1463 10.5949 17.1463 11.1528 17.7042L15.1426 21.694L24.1284 12.7Z" fill="#3F8AE0"/>
+                                    </svg>
+                                </div>
+                                <div class="error-content">
+                                    <h3 class="modal-title">Спасибо за голосование</h3>
+                                    <p class="modal-description">
+                                        Ваш голос был принят. Благодарим <br> 
+                                        за участие в голосовании.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+				<div class="container">
+					<div class="header-container">
+						<div class="header-inner">
+							<div class="header-block">
+								<a href="/" class="logo">
+									<svg width="139" height="19" viewBox="0 0 139 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M3.81406 3.53906V9.31641H7.22422C8.18516 9.31641 8.93125 9.0625 9.4625 8.55469C9.99375 8.04688 10.2594 7.33594 10.2594 6.42188C10.2594 5.53125 9.98203 4.82812 9.42735 4.3125C8.87266 3.79688 8.11875 3.53906 7.16563 3.53906H3.81406ZM3.81406 11.6367V18H0.790627V1.08984H7.50547C9.32578 1.08984 10.7555 1.5625 11.7945 2.50781C12.8336 3.44531 13.3531 4.72656 13.3531 6.35156C13.3531 7.48438 13.0719 8.48438 12.5094 9.35156C11.9469 10.2109 11.1656 10.8203 10.1656 11.1797L13.857 18H10.4117L7.0836 11.6367H3.81406ZM22.4141 18H19.3906V1.08984H22.4141V18ZM28.2992 13.2422H31.2289C31.3227 14.0156 31.7211 14.6406 32.4242 15.1172C33.1273 15.5859 33.9984 15.8203 35.0375 15.8203C36.0531 15.8203 36.8813 15.5938 37.5219 15.1406C38.1703 14.6875 38.4945 14.1094 38.4945 13.4062C38.4945 12.7969 38.2602 12.3047 37.7914 11.9297C37.3227 11.5469 36.557 11.2305 35.4945 10.9805L33.3031 10.4648C31.7484 10.1055 30.5922 9.54688 29.8344 8.78906C29.0844 8.03125 28.7094 7.04688 28.7094 5.83594C28.7094 4.34375 29.2953 3.13281 30.4672 2.20312C31.6391 1.27344 33.1508 0.808594 35.0023 0.808594C36.8617 0.808594 38.3578 1.26953 39.4906 2.19141C40.6313 3.10547 41.2211 4.30859 41.2602 5.80078H38.3773C38.307 5.01172 37.9672 4.39453 37.3578 3.94922C36.7484 3.49609 35.9555 3.26953 34.9789 3.26953C34.0258 3.26953 33.2523 3.48438 32.6586 3.91406C32.0727 4.34375 31.7797 4.91016 31.7797 5.61328C31.7797 6.17578 32.0063 6.63281 32.4594 6.98438C32.9203 7.33594 33.6703 7.63672 34.7094 7.88672L36.6547 8.33203C38.3656 8.72266 39.6078 9.29297 40.3813 10.043C41.1547 10.793 41.5414 11.7969 41.5414 13.0547C41.5414 14.6562 40.9398 15.9297 39.7367 16.875C38.5414 17.8125 36.9203 18.2812 34.8734 18.2812C32.9203 18.2812 31.35 17.832 30.1625 16.9336C28.9828 16.0273 28.3617 14.7969 28.2992 13.2422ZM54.8797 0.808594C57.3406 0.808594 59.2898 1.59375 60.7273 3.16406C62.1727 4.73438 62.8953 6.86328 62.8953 9.55078C62.8953 12.2383 62.1727 14.3672 60.7273 15.9375C59.2898 17.5 57.3406 18.2812 54.8797 18.2812C52.4109 18.2812 50.4539 17.5 49.0086 15.9375C47.5711 14.3672 46.8523 12.2383 46.8523 9.55078C46.8523 6.86328 47.5711 4.73438 49.0086 3.16406C50.4539 1.59375 52.4109 0.808594 54.8797 0.808594ZM58.4773 5.0625C57.5867 3.94531 56.3875 3.38672 54.8797 3.38672C53.3719 3.38672 52.1727 3.94141 51.282 5.05078C50.3914 6.16016 49.9461 7.66016 49.9461 9.55078C49.9461 11.4336 50.3914 12.9297 51.282 14.0391C52.1727 15.1484 53.3719 15.7031 54.8797 15.7031C56.3875 15.7031 57.5867 15.1484 58.4773 14.0391C59.368 12.9297 59.8133 11.4336 59.8133 9.55078C59.8133 7.66797 59.368 6.17188 58.4773 5.0625ZM76.5031 18H73.0344L67.1516 1.08984H70.4797L74.7688 14.7539H74.8391L79.1281 1.08984H82.3859L76.5031 18ZM97.1305 18L95.6891 13.6289H89.4664L88.025 18H84.9078L90.9078 1.08984H94.318L100.318 18H97.1305ZM92.5367 4.07812L90.1695 11.2969H94.9742L92.6188 4.07812H92.5367ZM104.809 13.2422H107.738C107.832 14.0156 108.23 14.6406 108.934 15.1172C109.637 15.5859 110.508 15.8203 111.547 15.8203C112.562 15.8203 113.391 15.5938 114.031 15.1406C114.68 14.6875 115.004 14.1094 115.004 13.4062C115.004 12.7969 114.77 12.3047 114.301 11.9297C113.832 11.5469 113.066 11.2305 112.004 10.9805L109.812 10.4648C108.258 10.1055 107.102 9.54688 106.344 8.78906C105.594 8.03125 105.219 7.04688 105.219 5.83594C105.219 4.34375 105.805 3.13281 106.977 2.20312C108.148 1.27344 109.66 0.808594 111.512 0.808594C113.371 0.808594 114.867 1.26953 116 2.19141C117.141 3.10547 117.73 4.30859 117.77 5.80078H114.887C114.816 5.01172 114.477 4.39453 113.867 3.94922C113.258 3.49609 112.465 3.26953 111.488 3.26953C110.535 3.26953 109.762 3.48438 109.168 3.91406C108.582 4.34375 108.289 4.91016 108.289 5.61328C108.289 6.17578 108.516 6.63281 108.969 6.98438C109.43 7.33594 110.18 7.63672 111.219 7.88672L113.164 8.33203C114.875 8.72266 116.117 9.29297 116.891 10.043C117.664 10.793 118.051 11.7969 118.051 13.0547C118.051 14.6562 117.449 15.9297 116.246 16.875C115.051 17.8125 113.43 18.2812 111.383 18.2812C109.43 18.2812 107.859 17.832 106.672 16.9336C105.492 16.0273 104.871 14.7969 104.809 13.2422ZM138.198 18H135.186V10.6641H126.959V18H123.936V1.08984H126.959V8.12109H135.186V1.08984H138.198V18Z" fill="#232324"/>
+                                    </svg>
+								</a>
+								<div class="logo-text">
+									Конкурс на лучшего <br>
+									домашнего питомца
+								</div>
+							</div>
+							<div class="header-block">
+								<div class="verified">
+									<div class="verified-inner">
+										<div class="verified-icon">
+											<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <circle cx="12" cy="12" r="12" fill="#C4C4C4"/>
+                                                <circle cx="12" cy="12" r="12" fill="url(#paint0_linear)"/>
+                                                <path fill-rule="evenodd" clip-rule="evenodd" d="M7.59731 8.13644C9.19801 8.21279 10.6838 7.881 12.0006 6.94739L12.0155 6.95805C13.3285 7.88325 14.8082 8.21223 16.4028 8.13644C16.6171 13.7258 14.9458 16.3308 12.0006 17.0527C9.05435 16.3308 7.38411 13.7033 7.59731 8.13644Z" fill="white"/>
+                                                <defs>
+                                                <linearGradient id="paint0_linear" x1="0.00331014" y1="-5.9513e-08" x2="24.0033" y2="23.9934" gradientUnits="userSpaceOnUse">
+                                                <stop stop-color="#81DA82"/>
+                                                <stop offset="1" stop-color="#4AB34B"/>
+                                                </linearGradient>
+                                                </defs>
+                                            </svg>                                                
+										</div>
+										<div class="verified-text">
+											Приложение проверено администрацией вконтакте
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</header>
+			<div class="voting">
+				<div class="container">
+					<h1 class="heading">Победитель получит 1.500 рублей и упаковку премиум корма!</h1>
+					<div class="voting-container">
+						<div class="voting-row">
+							<div class="voting-col">
+								<div class="author-item">
+									<div class="author-img">
+										<img :src="member_one.img" alt="">
+									</div>
+									<div class="author-content">
+										<div class="author-name">{{member_one.name}}</div>
+										<div class="author-statistic">
+											<div class="author-quantity">
+												<svg width="16" height="12" viewBox="0 0 16 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path d="M4.70588 6.85714C7.21399 6.85714 9.41177 7.91479 9.41177 10.2367C9.41177 11.4538 8.97941 12 8.06459 12H1.34717C0.43236 12 0 11.4538 0 10.2367C0 7.91479 2.19778 6.85714 4.70588 6.85714ZM11.2941 6.85714C13.8022 6.85714 16 7.91479 16 10.2367C16 11.4538 15.5676 12 14.6528 12H10.9804C10.6339 12 10.3529 11.693 10.3529 11.3143C10.3529 10.9356 10.6339 10.6286 10.9804 10.6286L14.6904 10.6287C14.701 10.6289 14.7099 10.6292 14.7171 10.6297L14.725 10.6306L14.7265 10.6205C14.7331 10.5648 14.7416 10.4689 14.7443 10.3273L14.7451 10.2367C14.7451 8.97967 13.1843 8.22857 11.2941 8.22857C11.0258 8.22857 10.7305 8.24916 10.4347 8.29087C10.091 8.33932 9.77641 8.07412 9.73208 7.69853C9.68774 7.32293 9.9304 6.97917 10.2741 6.93071C10.6234 6.88147 10.9723 6.85714 11.2941 6.85714ZM4.70588 8.22857C2.81568 8.22857 1.2549 8.97967 1.2549 10.2367C1.2549 10.429 1.26554 10.5537 1.27347 10.6205L1.27435 10.6306L1.28286 10.6297L1.29497 10.6291L8.1122 10.6289C8.11852 10.6291 8.12407 10.6294 8.1289 10.6297L8.13678 10.6306L8.1383 10.6205C8.14622 10.5537 8.15686 10.429 8.15686 10.2367C8.15686 8.97967 6.59609 8.22857 4.70588 8.22857ZM11.2941 0C12.7673 0 13.9608 1.30429 13.9608 2.91429C13.9608 4.52428 12.7673 5.82857 11.2941 5.82857C9.82092 5.82857 8.62745 4.52428 8.62745 2.91429C8.62745 1.30429 9.82092 0 11.2941 0ZM4.70588 0C6.17908 0 7.37255 1.30429 7.37255 2.91429C7.37255 4.52428 6.17908 5.82857 4.70588 5.82857C3.23268 5.82857 2.03922 4.52428 2.03922 2.91429C2.03922 1.30429 3.23268 0 4.70588 0ZM11.2941 1.37143C10.514 1.37143 9.88235 2.06171 9.88235 2.91429C9.88235 3.76686 10.514 4.45714 11.2941 4.45714C12.0743 4.45714 12.7059 3.76686 12.7059 2.91429C12.7059 2.06171 12.0743 1.37143 11.2941 1.37143ZM4.70588 1.37143C3.92575 1.37143 3.29412 2.06171 3.29412 2.91429C3.29412 3.76686 3.92575 4.45714 4.70588 4.45714C5.48602 4.45714 6.11765 3.76686 6.11765 2.91429C6.11765 2.06171 5.48602 1.37143 4.70588 1.37143Z" fill="#99A2AD"/>
+                                                </svg>                                                    
+												<span>{{member_one.votes}} голосов</span>
+											</div>
+											<progress max="400" :value="member_one.votes"></progress>
+										</div>
+									</div>
+									<div class="author-buttons">
+										<button class="btn btn-reset btn-primary btn-vote" @click="vote">
+                                            <svg width="11" height="14" viewBox="0 0 11 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M5.14049 0.437978L5.20297 0.442838C5.32087 0.469363 5.39494 0.586442 5.36842 0.70434L5.33477 0.831076C5.31065 0.908268 5.28305 0.970846 5.25199 1.01881C3.60013 3.56932 4.32561 5.10241 5.43948 5.26716C6.59156 5.43756 7.43433 4.66571 7.254 2.99974C7.22294 2.71278 7.19698 2.47096 7.17611 2.27427C7.17119 2.22796 7.18251 2.18137 7.20814 2.14248C7.26921 2.04978 7.39387 2.02414 7.48657 2.08521L7.63058 2.18699C7.97437 2.44706 8.37456 2.86182 8.83117 3.43128C10.5503 5.57528 10.7399 7.39573 10.7503 8.3154L10.75 8.51853C10.7125 11.5072 8.5 13.5626 5.5 13.5626C2.5 13.5626 0.25 11.5076 0.25 8.51853C0.263288 6.25557 1.40645 3.07017 4.56238 0.818339C4.68026 0.73423 4.83434 0.621632 5.02462 0.480547C5.07575 0.442631 5.14086 0.428865 5.20297 0.442838L5.14049 0.437978ZM7.6919 6.12946L4.625 9.19636L3.3081 7.87946C3.06891 7.64027 2.68109 7.64027 2.4419 7.87946C2.2027 8.11866 2.2027 8.50647 2.4419 8.74567L4.1919 10.4957C4.43109 10.7349 4.81891 10.7349 5.0581 10.4957L8.5581 6.99567C8.7973 6.75647 8.7973 6.36866 8.5581 6.12946C8.31891 5.89027 7.93109 5.89027 7.6919 6.12946Z" fill="white"/>
+                                            </svg>
+											Проголосовать
+										</button>
+									</div>
+								</div>
+							</div>
+							<div class="voting-col">
+								<div class="author-item">
+									<div class="author-img">
+										<img :src="member_two.img" alt="">
+									</div>
+									<div class="author-content">
+										<div class="author-name">{{member_two.name}}</div>
+										<div class="author-statistic">
+											<div class="author-quantity">
+												<svg width="16" height="12" viewBox="0 0 16 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path d="M4.70588 6.85714C7.21399 6.85714 9.41177 7.91479 9.41177 10.2367C9.41177 11.4538 8.97941 12 8.06459 12H1.34717C0.43236 12 0 11.4538 0 10.2367C0 7.91479 2.19778 6.85714 4.70588 6.85714ZM11.2941 6.85714C13.8022 6.85714 16 7.91479 16 10.2367C16 11.4538 15.5676 12 14.6528 12H10.9804C10.6339 12 10.3529 11.693 10.3529 11.3143C10.3529 10.9356 10.6339 10.6286 10.9804 10.6286L14.6904 10.6287C14.701 10.6289 14.7099 10.6292 14.7171 10.6297L14.725 10.6306L14.7265 10.6205C14.7331 10.5648 14.7416 10.4689 14.7443 10.3273L14.7451 10.2367C14.7451 8.97967 13.1843 8.22857 11.2941 8.22857C11.0258 8.22857 10.7305 8.24916 10.4347 8.29087C10.091 8.33932 9.77641 8.07412 9.73208 7.69853C9.68774 7.32293 9.9304 6.97917 10.2741 6.93071C10.6234 6.88147 10.9723 6.85714 11.2941 6.85714ZM4.70588 8.22857C2.81568 8.22857 1.2549 8.97967 1.2549 10.2367C1.2549 10.429 1.26554 10.5537 1.27347 10.6205L1.27435 10.6306L1.28286 10.6297L1.29497 10.6291L8.1122 10.6289C8.11852 10.6291 8.12407 10.6294 8.1289 10.6297L8.13678 10.6306L8.1383 10.6205C8.14622 10.5537 8.15686 10.429 8.15686 10.2367C8.15686 8.97967 6.59609 8.22857 4.70588 8.22857ZM11.2941 0C12.7673 0 13.9608 1.30429 13.9608 2.91429C13.9608 4.52428 12.7673 5.82857 11.2941 5.82857C9.82092 5.82857 8.62745 4.52428 8.62745 2.91429C8.62745 1.30429 9.82092 0 11.2941 0ZM4.70588 0C6.17908 0 7.37255 1.30429 7.37255 2.91429C7.37255 4.52428 6.17908 5.82857 4.70588 5.82857C3.23268 5.82857 2.03922 4.52428 2.03922 2.91429C2.03922 1.30429 3.23268 0 4.70588 0ZM11.2941 1.37143C10.514 1.37143 9.88235 2.06171 9.88235 2.91429C9.88235 3.76686 10.514 4.45714 11.2941 4.45714C12.0743 4.45714 12.7059 3.76686 12.7059 2.91429C12.7059 2.06171 12.0743 1.37143 11.2941 1.37143ZM4.70588 1.37143C3.92575 1.37143 3.29412 2.06171 3.29412 2.91429C3.29412 3.76686 3.92575 4.45714 4.70588 4.45714C5.48602 4.45714 6.11765 3.76686 6.11765 2.91429C6.11765 2.06171 5.48602 1.37143 4.70588 1.37143Z" fill="#99A2AD"/>
+                                                </svg> 
+												<span>{{member_two.votes}} голосов</span>
+											</div>
+											<progress max="400" :value="member_two.votes"></progress>
+										</div>
+									</div>
+									<div class="author-buttons">
+										<button class="btn btn-reset btn-primary btn-vote" @click="vote">
+											<svg width="11" height="14" viewBox="0 0 11 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M5.14049 0.437978L5.20297 0.442838C5.32087 0.469363 5.39494 0.586442 5.36842 0.70434L5.33477 0.831076C5.31065 0.908268 5.28305 0.970846 5.25199 1.01881C3.60013 3.56932 4.32561 5.10241 5.43948 5.26716C6.59156 5.43756 7.43433 4.66571 7.254 2.99974C7.22294 2.71278 7.19698 2.47096 7.17611 2.27427C7.17119 2.22796 7.18251 2.18137 7.20814 2.14248C7.26921 2.04978 7.39387 2.02414 7.48657 2.08521L7.63058 2.18699C7.97437 2.44706 8.37456 2.86182 8.83117 3.43128C10.5503 5.57528 10.7399 7.39573 10.7503 8.3154L10.75 8.51853C10.7125 11.5072 8.5 13.5626 5.5 13.5626C2.5 13.5626 0.25 11.5076 0.25 8.51853C0.263288 6.25557 1.40645 3.07017 4.56238 0.818339C4.68026 0.73423 4.83434 0.621632 5.02462 0.480547C5.07575 0.442631 5.14086 0.428865 5.20297 0.442838L5.14049 0.437978ZM7.6919 6.12946L4.625 9.19636L3.3081 7.87946C3.06891 7.64027 2.68109 7.64027 2.4419 7.87946C2.2027 8.11866 2.2027 8.50647 2.4419 8.74567L4.1919 10.4957C4.43109 10.7349 4.81891 10.7349 5.0581 10.4957L8.5581 6.99567C8.7973 6.75647 8.7973 6.36866 8.5581 6.12946C8.31891 5.89027 7.93109 5.89027 7.6919 6.12946Z" fill="white"/>
+                                            </svg>
+											Проголосовать
+										</buton>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<script src="https://unpkg.com/@vkontakte/vk-bridge/dist/browser.min.js"></script>
+
+    <script>
+        // Sends event to client
+        vkBridge.send('VKWebAppInit');
+    </script> 
+	<script src="https://cdn.jsdelivr.net/npm/vue"></script>
+	<script src="main.js"></script>
+</body>
+</html>
